@@ -1,0 +1,67 @@
+div {
+    color: white;
+}
+
+.container {
+    width: 400px;
+    padding: 1rem;
+    margin: 0 auto;
+    border: solid 1px black;
+    background-color: lightgray;
+}
+
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.red-box {
+    background-color: red;
+    float: left;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.red-box:hover {
+    background-color: blueviolet;
+    color: rgb(255, 255, 0);
+    width: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.green-box {
+    background-color: green;
+    float: left;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.green-box:hover {
+    background-color: wheat;
+    color: black;
+    width: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.blue-box {
+    background-color: blue;
+    float: left;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.blue-box:hover {
+    background-color: coral;
+    color: rgb(255, 255, 0);
+    width: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+    width: 100px;
+}
